@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Firestore Image Upload
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-card text-center *ngIf="!isUploading && !isUploaded">
+    <ion-card-header>
+      <ion-card-title>Choose Images to Upload</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="fileUpload btn btn-primary">
+        <span>Upload</span>
+        <input
+          id="uploadBtn"
+          type="file"
+          class="upload"
+          (change)="uploadFile($event.target.files)"
+        />
+      </div>
+    </ion-card-content>
+  </ion-card>
+  </ion-content>
+
+  

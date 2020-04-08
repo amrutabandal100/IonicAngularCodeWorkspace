@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back" [routerLink]="['/folder/Home']"></ion-icon>
+    <ion-title style="text-align: center;font-weight: 800;">Delivery Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+    <ion-row style="padding-left: 25px;color: #000;font-weight: 800;margin-top: 15px;font-size: 30;">
+  <ion-label>Order Id : 12345</ion-label>
+  </ion-row>
+  </ion-card>
+  <ion-card class="card1">
+  <ion-row style="padding-left: 25px;color: #000;font-weight: 800;margin-top: 15px;font-size: 30;">
+    <ion-label>Pickup Address : pimple gurav</ion-label>
+  </ion-row >
+  <ion-row style="padding-left: 25px;color: #000;font-weight: 800;margin-top: 15px;font-size: 30;">
+    <ion-label>Deliver Address : Dipak niwas</ion-label>
+  </ion-row>
+  </ion-card>
+<ion-card  class="card1"> 
+  <h6 style="text-align: center;font-weight: 800;color: #000;">Delivery Accepted BY 30 min</h6>
+  <ion-select interface="popover" style="font-size: 15px;font-weight: 800;color: #000;">
+    <ion-select-option *ngFor="let user of users">{{user.value}}</ion-select-option>
+  </ion-select>
+</ion-card>
+</ion-content>

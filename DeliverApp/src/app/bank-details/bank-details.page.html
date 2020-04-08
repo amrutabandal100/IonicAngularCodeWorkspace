@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back" [routerLink]="['/folder/Home']"></ion-icon>
+    <ion-title style="text-align: center;">Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h6 style="text-align: center;color: #000;font-weight: 700;">BANK DETAILS</h6>
+  <ion-card>
+    <ion-item lines="full">
+      <ion-label position="floating">Account holder Name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Account Number</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Branch IFSC Code</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">PAN CARD NUMBER</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+  </ion-card>
+
+  <h6 style="text-align: center;color: #000;font-weight: 700;">UPI PAYMENT DETAILS</h6>
+  <ion-card>
+    <ion-item lines="full">
+      <ion-label position="floating">UPI ID:</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+   
+
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back" [routerLink]="['/folder/Home']"></ion-icon>
+    <ion-title style="text-align: center;">Login History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card class="card">
+  <ion-row>
+  <h6 style="font-weight: 800;color: #000;padding-left: 20px;">Today so far</h6>
+  <h6 style="font-weight: 800;color: #000;padding-left: 150px;">0 m</h6>
+  </ion-row>
+</ion-card>
+<h6 style="font-weight: 800;color: #000;padding-left: 20px;">PAST LOGIN INFORMATION</h6>
+<ion-card>
+  <h6 style="font-weight: 800;color: #000;padding-left: 20px;">This Week </h6>
+  <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" style="margin-top: 2px;color:#000"></ion-datetime>
+</ion-card>
+<ion-card class="card">
+  <h6 style="font-weight: 800;color: #000;padding-left: 20px;">Previous Week</h6>
+  <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" style="margin-top: 2px;color:#000"></ion-datetime>
+</ion-card>
+</ion-content>
